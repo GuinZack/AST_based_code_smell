@@ -12,7 +12,7 @@ plugins {
 }
 
 apply plugin: 'application'
-mainClassName = 'hotdog.nayeawon.CodeSmell'
+mainClassName = "hotdog.nayeawon.CodeSmell"
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -30,14 +30,13 @@ dependencies {
     implementation group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '6.1.0.202203080745-r'
 
     // https://mvnrepository.com/artifact/org.eclipse/jface
-    implementation group: 'org.eclipse', name: 'jface', version: '3.3.0-I20070606-0010'
+    implementation group: 'org.eclipse', name: 'jface', version: '3.2.1-M20060908-1000'
 
     // https://mvnrepository.com/artifact/org.eclipse.core/commands
     implementation group: 'org.eclipse.core', name: 'commands', version: '3.2.0-I20060605-1400'
 
-
     // https://mvnrepository.com/artifact/org.eclipse/swt
-    implementation group: 'org.eclipse', name: 'swt', version: '3.3.0-v3346'
+    implementation group: 'org.eclipse', name: 'swt', version: '3.2.1-v3235e'
 
     // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
     implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.9.0'
@@ -48,19 +47,3 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-configurations.all {
-    resolutionStrategy {
-        dependencySubstitution {
-            def os = System.getProperty("os.name").toLowerCase()
-            if (os.contains("windows")) {
-                substitute module('org.eclipse.platform:org.eclipse.swt.${osgi.platform}') with module("org.eclipse.platform:org.eclipse.swt.win32.win32.x86_64:3.114.0")
-            }
-            else if (os.contains("linux")) {
-                substitute module('org.eclipse.platform:org.eclipse.swt.${osgi.platform}') with module("org.eclipse.platform:org.eclipse.swt.gtk.linux.x86_64:3.114.0")
-            }
-            else if (os.contains("mac")) {
-                substitute module('org.eclipse.platform:org.eclipse.swt.${osgi.platform}') with module("org.eclipse.platform:org.eclipse.swt.cocoa.macosx.x86_64:3.114.0")
-            }
-        }
-    }
-}
