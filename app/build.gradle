@@ -29,6 +29,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
     implementation group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '6.1.0.202203080745-r'
 
+    // https://mvnrepository.com/artifact/org.eclipse.text/org.eclipse.text
+    implementation group: 'org.eclipse.text', name: 'org.eclipse.text', version: '3.5.101'
+
     // https://mvnrepository.com/artifact/org.eclipse/jface
     implementation group: 'org.eclipse', name: 'jface', version: '3.2.1-M20060908-1000'
 
