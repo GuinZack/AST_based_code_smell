@@ -44,6 +44,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse/swt
     implementation group: 'org.eclipse', name: 'swt', version: '3.2.1-v3235e'
 
+    // https://mvnrepository.com/artifact/org.eclipse.equinox/org.eclipse.equinox.common
+    implementation group: 'org.eclipse.equinox', name: 'org.eclipse.equinox.common', version: '3.6.0'
+
     // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
     implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.9.0'
 
