@@ -11,6 +11,9 @@ plugins {
     id 'application'
 }
 
+apply plugin: 'application'
+mainClassName = 'hotdog.nayeawon.CodeSmell'
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -33,9 +36,4 @@ dependencies {
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.5.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-}
-
-application {
-    // Define the main class for the application.
-    mainClass = 'hotdog.nayeawon.CodeSmell'
 }
