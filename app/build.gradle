@@ -29,6 +29,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
     implementation group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '6.1.0.202203080745-r'
 
+    // https://mvnrepository.com/artifact/org.eclipse.jface/text
+    implementation group: 'org.eclipse.jface', name: 'text', version: '3.3.0-v20070606-0010'
+
     // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
     implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.9.0'
 
