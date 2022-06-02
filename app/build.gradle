@@ -53,6 +53,6 @@ dependencies {
     // https://mvnrepository.com/artifact/commons-cli/commons-cli
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.5.0'
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['DesigniteJava-1.1.2.jar'])
 }
 
