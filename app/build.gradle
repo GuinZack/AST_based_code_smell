@@ -47,6 +47,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse.equinox/org.eclipse.equinox.common
     implementation group: 'org.eclipse.equinox', name: 'org.eclipse.equinox.common', version: '3.6.0'
 
+    // https://mvnrepository.com/artifact/org.eclipse.core/runtime
+    implementation group: 'org.eclipse.core', name: 'runtime', version: '3.10.0-v20140318-2214'
+
     // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
     implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.9.0'
 
